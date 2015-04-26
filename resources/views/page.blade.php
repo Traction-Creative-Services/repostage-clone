@@ -26,6 +26,10 @@ css media query:
             padding: 9.375rem 0px;
             height:700px;
             color:#FFF;
+            background-image: url('nic-cage.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
         }
         .setup .step{
             padding: 0px;
@@ -69,7 +73,8 @@ css media query:
             </div>
         </div>
     </div>
-    <div class="hero" style='background-image: url("http://schmoesknow.com/wp-content/uploads/2013/07/Nicolas-Cage-nicolas-cage-26969943-1982-1300.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+    <!--<div class="hero" style='background-image: url("http://schmoesknow.com/wp-content/uploads/2013/07/Nicolas-Cage-nicolas-cage-26969943-1982-1300.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>-->
+    <div class="hero">
        <div class="container-fluid">
          <div class="row">
            <div class="col-sm-6">
