@@ -19,6 +19,10 @@ css media query:
             max-width: 110rem;
             margin: 0px auto;
         }
+        a{
+          color: #FFF;
+          rext-decoration: none;
+        }
         .header{
             height: 0px;
         }
@@ -26,10 +30,13 @@ css media query:
             padding: 9.375rem 0px;
             height:700px;
             color:#FFF;
-            background-image: url('nic-cage.jpg');
+            background-image: url('nicage.jpg');
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
+        }
+        .setup{
+              padding: 9.375rem 0;
         }
         .setup .step{
             padding: 0px;
@@ -60,6 +67,57 @@ css media query:
           top:25px;
           right:-50px;
         }
+        .footer{
+          color: #FFF;
+          background-image: radial-gradient(at top left, #3A8FDC 0%, #87D7CD 100%);
+          background-size: cover;
+          padding: 2.8125rem 0;
+        }
+        .footer .instagram{
+          height: 1.3125rem;
+          width: 1.25rem;
+          background-image: url("instagram-icon.svg");
+          background-size: contain;
+          display:inline-block;
+          vertical-align: middle;
+          margin: 0 0.625rem;
+        }
+        .footer .facebook{
+          height: 1.3125rem;
+          width: 0.625rem;
+          background-image: url("facebook-icon.svg");
+          background-size: contain;
+          display:inline-block;
+          vertical-align: middle;
+          margin: 0 0.625rem;
+        }
+        .footer .twitter{
+          height: 1.0625rem;
+          width: 1.3125rem;
+          background-image: url("twitter-icon.svg");
+          background-size: contain;
+          display:inline-block;
+          vertical-align: middle;
+          margin: 0 0.625rem;
+        }
+        .footer .california{
+          height: 1.875rem;
+          width: 3.75rem;
+          background-image: url("california-icon.svg");
+          background-size: contain;
+          display:inline-block;
+          vertical-align: middle;
+          margin: 0 0 0 0.625rem; 
+        }
+        .footer .span{
+          font-size: 0.75rem;
+          line-height: 0.875rem;
+          font-weight: 400;
+        }
+        .footer li{
+          display: inline;
+          margin: 0 0.9375rem;
+        }
      </style>
 </head>
 <body>
@@ -73,7 +131,6 @@ css media query:
             </div>
         </div>
     </div>
-    <!--<div class="hero" style='background-image: url("http://schmoesknow.com/wp-content/uploads/2013/07/Nicolas-Cage-nicolas-cage-26969943-1982-1300.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>-->
     <div class="hero">
        <div class="container-fluid">
          <div class="row">
@@ -81,7 +138,7 @@ css media query:
              <h1>Print &amp; Ship Photos</h1>
              <h3>Add #Repostage to any of your Instagram photos and get a printed postcard in the mail.</h3>
              <a href="http://i.huffpost.com/gen/1548397/images/o-NIC-CAGE-facebook.jpg">
-               <div class="button text-center">
+               <div class="btn btn-primary text-center">
                  <span>Nic Cage</span>
                </div>
              </a>
@@ -154,7 +211,7 @@ css media query:
                                 <div class="stripe"></div>
                                 <p></p>
                                 <div class="card"></div>
-                                <button>Sign up with</button>
+                                <div class="btn btn-primary">Sign up with</div>
                             </div>
                         </div>
                     </div>
@@ -206,7 +263,30 @@ css media query:
           <div class="col-xs-12 text-center">
             <h1>Does this all sound good?</h1>
             <h5>Well it's all true. Start enjoying Repostage today.</h5>
-            <button>Sign up with</button>
+            <div class="btn btn-primary">Sign up with</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-5 text-left">
+            <span>Made in Orange County</span>
+            <div class="california"></div>
+          </div>
+          <div class="col-xs-2 text-center">
+            <a href="http://vodzilla.co/wp-content/uploads/2013/08/con-air-nic-cage-700x325.jpg" class="instagram"></a>
+            <a href="http://25.media.tumblr.com/tumblr_m8wvscKuTy1rcgim4o1_400.jpg" class="facebook"></a>
+            <a href="http://bumbumbum.me/wp-content/uploads/2010/01/Chironex-Fleckerinickywonka-e1263934224121.jpg" class="twitter"></a>
+          </div>
+          <div class="col-xs-5 text-right">
+            <ul>
+              <li><span><a href="/joe">FAQ</a></span></li>
+              <li><span><a href="/joe">Legal</a></span></li>
+              <li><span><a href="/joe">Contact Us</a></span></li>
+              <li><span>© 2015 Repostage</span></li>
+            </ul>
           </div>
         </div>
       </div>
