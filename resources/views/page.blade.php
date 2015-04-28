@@ -23,6 +23,9 @@ css media query:
           color: #FFF;
           text-decoration: none;
         }
+        div{
+          font-size: 100%;
+        }
         .header{
           position: relative;
             height: 0;
@@ -83,6 +86,7 @@ css media query:
         }
         .pay {
             color: #FFF;
+            padding: 5rem 0;
             background-image: radial-gradient(at left top , #3A8FDC 0%, #87D7CD 100%);
         }
         .pay .cards-mobile-container{
@@ -200,7 +204,7 @@ css media query:
          </div>
        </div>
      </div>
-    <div class="Setup">
+    <div class="setup">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
