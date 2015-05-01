@@ -34,7 +34,7 @@ class WelcomeController extends Controller {
 	}
 	
 	public function joe(){
-		return view('welcome');
+		return view('joe');
 	}
 
 }
