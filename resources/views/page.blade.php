@@ -9,11 +9,10 @@ css media query:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
     <style>
-        .body{
-            font-family: sans-serif;
+        body{
+            font-family: 'Lato', sans-serif;
         }
         .row{
             max-width: 110rem;
@@ -111,6 +110,9 @@ css media query:
           padding: 5rem 0;
           color: #505050;
         }
+        .table .row{
+          padding: 10px;
+          }
         .end {
           color: #FFF;
           padding: 9.375rem 0px;
@@ -175,6 +177,8 @@ css media query:
      </style>
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <div class="header">
         <div class="container-fluid">
             <div class="row">
@@ -192,7 +196,7 @@ css media query:
     <div class="hero">
        <div class="container-fluid">
          <div class="row">
-           <div class="col-sm-6">
+           <div class="col-sm-6 col-xs-12">
              <h1>Print &amp; Ship Photos</h1>
              <h3>Add #Repostage to any of your Instagram photos and get a printed postcard in the mail.</h3>
              <a href="http://i.huffpost.com/gen/1548397/images/o-NIC-CAGE-facebook.jpg">
