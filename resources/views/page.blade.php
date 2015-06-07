@@ -11,7 +11,7 @@ css media query:
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <style>
-    body{
+body{
     font-family: 'Lato', sans-serif;
 }
 .row{
@@ -26,25 +26,27 @@ div{
     font-size: 100%;
 }
 .header{
+    padding-top: 45px;
     position: relative;
     height: 0;
-    color: #FFF;
 }
 .header .logo{
     position: relative;
     top: 50%
     transform: translateY(-50%);
-    height: 2.75rem;
-    width: 2.75rem;
+    height: 40px;
+    width: 40px;
     background-image: url("logo.svg");
     background-size: cover;
     float: left;
 }
-.header .email{
+.header .email a{
     position: relative;
     top: 50%
     transform: translateY(-50%);
     float: right;
+    width:50px;
+    font-size:13px;
 }
 .header .email span{
     font-size: 0.875rem;
@@ -53,6 +55,7 @@ div{
 }
 .hero {
     padding: 9.375rem 0px;
+    padding-top:200px;
     height:700px;
     color:#FFF;
     background-image: url('nicage.jpg');
@@ -60,12 +63,43 @@ div{
     background-position: center center;
     background-repeat: no-repeat;
 }
+.hero h1{
+  font-size: 50px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero h3{
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.button{
+  width: 300px;
+  height: 55px;
+  border-radius:6px;
+  display: inline-block;
+}
+.button.instagram{
+  background-image: linear-gradient(-180deg, #537FA3 0%, #326083 100%);
+}
+.button.instagram .instagram-logo{
+  height: 20px;
+  width: 125px;
+  background: url("instagram-logo.svg") center center no-repeat transparent;
+  background-size: cover;
+  vertical-align: middle;
+  margin-top: 20px;
+  display: inline-block;
+  }
 .setup{
     color: #505050;
-    padding: 9.375rem 0;
+    padding: 75px;
+    margin-top: 55px;
+    margin-bottom: 125px;
 }
-.setup .steps-container{
-    margin: 3.125rem;
+.setup h2{
+  font-size: 35px;
+}
+.setup h5{
+  font-size: 17px;
+  margin-bottom: 50px;
 }
 .setup .step{
     display: flex;
@@ -87,6 +121,10 @@ div{
     color: #FFF;
     padding: 5rem 0;
     background-image: radial-gradient(at left top , #3A8FDC 0%, #87D7CD 100%);
+    height: 800px
+}
+.pay h1{
+  font-size: 40px;
 }
 .pay .cards-mobile-container{
     display: none;
@@ -183,7 +221,7 @@ div{
                   <a href="/"><div class="logo"></div></a>
                   <div class="email">
                     <span>
-                      <a href="http://i.huffpost.com/gen/1548397/images/o-NIC-CAGE-facebook.jpg">Log in</a>
+                      <a href="{{url('http://i.huffpost.com/gen/1548397/images/o-NIC-CAGE-facebook.jpg')}}">Log in</a>
                     </span>
                   </div>
                 </div>
@@ -196,9 +234,10 @@ div{
            <div class="col-sm-6">
              <h1>Print &amp; Ship Photos</h1>
              <h3>Add #Repostage to any of your Instagram photos and get a printed postcard in the mail.</h3>
-             <a href="http://i.huffpost.com/gen/1548397/images/o-NIC-CAGE-facebook.jpg">
-               <div class="btn btn-primary text-center">
+             <a href="{{url('http://i.huffpost.com/gen/1548397/images/o-NIC-CAGE-facebook.jpg')}}">
+               <div class="button instagram text-center">
                  <span>Nic Cage</span>
+                 <div class= "instagram-logo"></div>
                </div>
              </a>
            </div>
@@ -253,7 +292,7 @@ div{
                     <div class="row">
                         <div class="col-sm-6 cards-mobile-container">
                             <div class="pic">
-                                <img class="img-responsive" src="http://replygif.net/thumbnail/1119.gif"></img>
+                                <img class="img-responsive" src="{{url('http://replygif.net/thumbnail/1119.gif')}}"></img>
                             </div>
                         </div>
                         <div class="col-md-6 col-md-offset-2 col-sm-6">
@@ -272,7 +311,7 @@ div{
                             </div>
                         </div>
                         <div class="col-md-4 cards-container">
-                          <img class="img-responsive" src="http://replygif.net/thumbnail/1119.gif"></img>
+                          <img class="img-responsive" src="{{url('http://replygif.net/thumbnail/1119.gif')}}"></img>
                         </div>
                     </div>
                 </div>
@@ -287,30 +326,30 @@ div{
             <h5>See, it works! Below are the most recent awesome photos being printed right now.</h5>
             <div class="row photo-row">
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="http://1.bp.blogspot.com/-xEeb9swx1ks/UP1vlgRW-rI/AAAAAAAAC8Y/wexMZkkwBLs/s1600/Chris-Shen-cage-michael-jackson-590x350.jpg"></img>
+                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://1.bp.blogspot.com/-xEeb9swx1ks/UP1vlgRW-rI/AAAAAAAAC8Y/wexMZkkwBLs/s1600/Chris-Shen-cage-michael-jackson-590x350.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="http://cdn.morefm.co.nz/morefm/AM/2013/2/21/6075/Nicolas-Cage-Face-20-Mona-Lisa.jpg"></img>
+                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://cdn.morefm.co.nz/morefm/AM/2013/2/21/6075/Nicolas-Cage-Face-20-Mona-Lisa.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="http://unrealitymag.bcmediagroup.netdna-cdn.com/wp-content/uploads/2010/01/nicholas_cage_12.jpg"></img>
+                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://unrealitymag.bcmediagroup.netdna-cdn.com/wp-content/uploads/2010/01/nicholas_cage_12.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="http://nicolascage.us/wp-content/uploads/2013/09/Something-About-Mary.jpg"></img>
+                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://nicolascage.us/wp-content/uploads/2013/09/Something-About-Mary.jpg')}}"></img>
               </div>
             </div>
             <div class="row photo-row">
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="http://d4f1ndlb0hkjb.cloudfront.net/wp-content/uploads/2010/01/nick-cage-abe-lincoln.jpg"></img>
+                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://d4f1ndlb0hkjb.cloudfront.net/wp-content/uploads/2010/01/nick-cage-abe-lincoln.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="https://aplaceforpeace.files.wordpress.com/2010/02/dylanreevenic-clinton.jpg"></img>
+                <img class="img-responsive img-rounded" alt="In Action" src="{{url('https://aplaceforpeace.files.wordpress.com/2010/02/dylanreevenic-clinton.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="http://media.tumblr.com/8876a5b97d45be5811442d8ea25d936f/tumblr_inline_mhhtb3G0w41qz4rgp.png"></img>
+                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://media.tumblr.com/8876a5b97d45be5811442d8ea25d936f/tumblr_inline_mhhtb3G0w41qz4rgp.png')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="http://media.tumblr.com/tumblr_m5yl9uOHhF1qmwrao.png"></img>
+                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://media.tumblr.com/tumblr_m5yl9uOHhF1qmwrao.png')}}"></img>
               </div>
             </div>
           </div>
@@ -336,15 +375,15 @@ div{
             <div class="california"></div>
           </div>
           <div class="col-sm-2 text-center">
-            <a href="http://vodzilla.co/wp-content/uploads/2013/08/con-air-nic-cage-700x325.jpg" class="instagram"></a>
-            <a href="http://25.media.tumblr.com/tumblr_m8wvscKuTy1rcgim4o1_400.jpg" class="facebook"></a>
-            <a href="http://bumbumbum.me/wp-content/uploads/2010/01/Chironex-Fleckerinickywonka-e1263934224121.jpg" class="twitter"></a>
+            <a href="{{url('http://vodzilla.co/wp-content/uploads/2013/08/con-air-nic-cage-700x325.jpg" class="instagram')}}" class="instagram"></a>
+            <a href="{{url('http://25.media.tumblr.com/tumblr_m8wvscKuTy1rcgim4o1_400.jpg" class="facebook')}}" class="facebook"></a>
+            <a href="{{url('http://bumbumbum.me/wp-content/uploads/2010/01/Chironex-Fleckerinickywonka-e1263934224121.jpg')}}" class="twitter"></a>
           </div>
           <div class="col-sm-5 text-right">
             <ul>
-              <li><span><a href="/joe">FAQ</a></span></li>
-              <li><span><a href="/joe">Legal</a></span></li>
-              <li><span><a href="/joe">Contact Us</a></span></li>
+              <li><span><a href="{{url('/joe')}}">FAQ</a></span></li>
+              <li><span><a href="{{url('/joe')}}">Legal</a></span></li>
+              <li><span><a href="{{url('/joe')}}">Contact Us</a></span></li>
               <li><span>© 2015 Repostage</span></li>
             </ul>
           </div>
