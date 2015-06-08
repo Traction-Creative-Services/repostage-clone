@@ -1,4 +1,4 @@
-/*body{
+body{
     font-family: 'Lato', sans-serif;
 }
 .row{
@@ -13,25 +13,27 @@ div{
     font-size: 100%;
 }
 .header{
+    padding-top: 45px;
     position: relative;
     height: 0;
-    color: #FFF;
 }
 .header .logo{
     position: relative;
     top: 50%
     transform: translateY(-50%);
-    height: 2.75rem;
-    width: 2.75rem;
+    height: 40px;
+    width: 40px;
     background-image: url("logo.svg");
-    background-size: contain;
+    background-size: cover;
     float: left;
 }
-.header .email{
+.header .email a{
     position: relative;
     top: 50%
     transform: translateY(-50%);
     float: right;
+    width:50px;
+    font-size:13px;
 }
 .header .email span{
     font-size: 0.875rem;
@@ -40,19 +42,51 @@ div{
 }
 .hero {
     padding: 9.375rem 0px;
+    padding-top:200px;
     height:700px;
     color:#FFF;
-    background-image: url('file:///home/mike/Programming/git_repos/repostage-clone/public/nicage.jpg');
+    background-image: url('nicage.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
+.hero h1{
+  font-size: 50px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero h3{
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.button{
+  width: 300px;
+  height: 55px;
+  border-radius:6px;
+  display: inline-block;
+}
+.button.instagram{
+  background-image: linear-gradient(-180deg, #537FA3 0%, #326083 100%);
+}
+.button.instagram .instagram-logo{
+  height: 30px;
+  width: 125px;
+  background: url("instagram-logo.svg") center center no-repeat transparent;
+  background-size: cover;
+  vertical-align: middle;
+  margin-top: 20px;
+  display: inline-block;
+  }
 .setup{
     color: #505050;
-    padding: 9.375rem 0;
+    padding: 75px;
+    margin-top: 55px;
+    margin-bottom: 125px;
 }
-.setup .steps-container{
-    margin: 3.125rem;
+.setup h2{
+  font-size: 35px;
+}
+.setup h5{
+  font-size: 17px;
+  margin-bottom: 50px;
 }
 .setup .step{
     display: flex;
@@ -74,6 +108,14 @@ div{
     color: #FFF;
     padding: 5rem 0;
     background-image: radial-gradient(at left top , #3A8FDC 0%, #87D7CD 100%);
+    height: 800px
+}
+.pay h1{
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+.pay h5{
+  font-size: 17px;
 }
 .pay .cards-mobile-container{
     display: none;
@@ -82,15 +124,14 @@ div{
     display: inline-block;
 }
 .stripe{
-    height: 1.4375rem;
-    width: 3.375rem;
-    background: url("http://www.repostage.com/static/stripe-logo.svg") no-repeat scroll center center / contain transparent;
-    display: inline-block;
-    vertical-align: top;
-}
+    height: 25px;
+    width: 60px;
+    background: url("stripe-logo.svg") no-repeat scroll center center / contain transparent;
+    background-size: 60px;
+    }
 .pay .card{
-    height: 2.375rem;
-    background: url("http://www.repostage.com/static/card-icons.png") no-repeat scroll center center / contain transparent;            
+    height: 40px;
+    background: url("card-icons.png") no-repeat scroll center center / contain transparent;
 }
 .table{
     padding: 5rem 0;
@@ -119,7 +160,7 @@ div{
     height: 1.3125rem;
     width: 1.25rem;
     background-image: url("instagram-icon.svg");
-    background-size: contain;
+    background-size: cover;
     display:inline-block;
     vertical-align: middle;
     margin: 0 0.625rem;
@@ -128,7 +169,7 @@ div{
     height: 1.3125rem;
     width: 0.625rem;
     background-image: url("facebook-icon.svg");
-    background-size: contain;
+    background-size: cover;
     display:inline-block;
     vertical-align: middle;
     margin: 0 0.625rem;
@@ -137,7 +178,7 @@ div{
     height: 1.0625rem;
     width: 1.3125rem;
     background-image: url("twitter-icon.svg");
-    background-size: contain;
+    background-size: cover;
     display:inline-block;
     vertical-align: middle;
     margin: 0 0.625rem;
@@ -146,7 +187,7 @@ div{
     height: 1.875rem;
     width: 3.75rem;
     background-image: url("california-icon.svg");
-    background-size: contain;
+    background-size: cover;
     display:inline-block;
     vertical-align: middle;
     margin: 0 0 0 0.625rem;
@@ -159,4 +200,4 @@ div{
 .footer li{
     display: inline;
     margin: 0 0.9375rem;
-}*/
+}

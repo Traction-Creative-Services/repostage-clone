@@ -1,7 +1,3 @@
-<!--getbootstrap.com
-css media query:
-    style sheet knows the browers-->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,208 +6,7 @@ css media query:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link type="text/css" rel="stylesheet" href="css/style.css">
-  <style>
-body{
-    font-family: 'Lato', sans-serif;
-}
-.row{
-    max-width: 110rem;
-    margin: 0px auto;
-}
-a{
-    color: #FFF;
-    text-decoration: none;
-}
-div{
-    font-size: 100%;
-}
-.header{
-    padding-top: 45px;
-    position: relative;
-    height: 0;
-}
-.header .logo{
-    position: relative;
-    top: 50%
-    transform: translateY(-50%);
-    height: 40px;
-    width: 40px;
-    background-image: url("logo.svg");
-    background-size: cover;
-    float: left;
-}
-.header .email a{
-    position: relative;
-    top: 50%
-    transform: translateY(-50%);
-    float: right;
-    width:50px;
-    font-size:13px;
-}
-.header .email span{
-    font-size: 0.875rem;
-    line-height: 1.1875rem;
-    letter-spacing: 0.03125rem;
-}
-.hero {
-    padding: 9.375rem 0px;
-    padding-top:200px;
-    height:700px;
-    color:#FFF;
-    background-image: url('nicage.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-.hero h1{
-  font-size: 50px;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.hero h3{
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.button{
-  width: 300px;
-  height: 55px;
-  border-radius:6px;
-  display: inline-block;
-}
-.button.instagram{
-  background-image: linear-gradient(-180deg, #537FA3 0%, #326083 100%);
-}
-.button.instagram .instagram-logo{
-  height: 20px;
-  width: 125px;
-  background: url("instagram-logo.svg") center center no-repeat transparent;
-  background-size: cover;
-  vertical-align: middle;
-  margin-top: 20px;
-  display: inline-block;
-  }
-.setup{
-    color: #505050;
-    padding: 75px;
-    margin-top: 55px;
-    margin-bottom: 125px;
-}
-.setup h2{
-  font-size: 35px;
-}
-.setup h5{
-  font-size: 17px;
-  margin-bottom: 50px;
-}
-.setup .step{
-    display: flex;
-    padding: 0 2.5rem;
-}
-.setup .step .step-number{
-    margin:0 0.625rem 0 0;
-    display:table;
-    font-size:3.125rem;
-}
-.setup .step .step-content{
-    display:table-cell;
-}
-.setup .step .step-content h4{
-    font-weight: 700;
-    margin-bottom:0.125rem;
-}
-.pay {
-    color: #FFF;
-    padding: 5rem 0;
-    background-image: radial-gradient(at left top , #3A8FDC 0%, #87D7CD 100%);
-    height: 800px
-}
-.pay h1{
-  font-size: 40px;
-}
-.pay .cards-mobile-container{
-    display: none;
-}
-@media(max-width:786px) .pay .cards-mobile-container{
-    display: inline-block;
-}
-.stripe{
-    height: 1.4375rem;
-    width: 3.375rem;
-    background: url("http://www.repostage.com/static/stripe-logo.svg") no-repeat scroll center center / contain transparent;
-    display: inline-block;
-    vertical-align: top;
-}
-.pay .card{
-    height: 2.375rem;
-    background: url("http://www.repostage.com/static/card-icons.png") no-repeat scroll center center / contain transparent;            
-}
-.table{
-    padding: 5rem 0;
-    color: #505050;
-}
-.table .row{
-    padding: 10px;
-}
-.end {
-    color: #FFF;
-    padding: 9.375rem 0px;
-    background: url("http://repostage.com/static/train-tracks.jpg") no-repeat scroll center center / cover transparent;
-}
-#log-in-btn{
-    position:relative;
-    top:25px;
-    right:-50px;
-}
-.footer{
-    color: #FFF;
-    background-image: radial-gradient(at top left, #3A8FDC 0%, #87D7CD 100%);
-    background-size: cover;
-    padding: 2.8125rem 0;
-}
-.footer .instagram{
-    height: 1.3125rem;
-    width: 1.25rem;
-    background-image: url("instagram-icon.svg");
-    background-size: cover;
-    display:inline-block;
-    vertical-align: middle;
-    margin: 0 0.625rem;
-}
-.footer .facebook{
-    height: 1.3125rem;
-    width: 0.625rem;
-    background-image: url("facebook-icon.svg");
-    background-size: cover;
-    display:inline-block;
-    vertical-align: middle;
-    margin: 0 0.625rem;
-}
-.footer .twitter{
-    height: 1.0625rem;
-    width: 1.3125rem;
-    background-image: url("twitter-icon.svg");
-    background-size: cover;
-    display:inline-block;
-    vertical-align: middle;
-    margin: 0 0.625rem;
-}
-.footer .california{
-    height: 1.875rem;
-    width: 3.75rem;
-    background-image: url("california-icon.svg");
-    background-size: cover;
-    display:inline-block;
-    vertical-align: middle;
-    margin: 0 0 0 0.625rem;
-}
-.footer .span{
-    font-size: 0.75rem;
-    line-height: 0.875rem;
-    font-weight: 400;
-}
-.footer li{
-    display: inline;
-    margin: 0 0.9375rem;
-}
-  </style>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
     <div class="header">
@@ -298,16 +93,25 @@ div{
                         <div class="col-md-6 col-md-offset-2 col-sm-6">
                             <div class="details">
                                 <h1>Pay As You Go</h1>
-                                <h5>One flat rate per photo Cancel at any time </h5>
+                                <h5>One flat rate per photo
+                                <br>
+                                Cancel at any time </h5>
                                 <h2>$1.49/photo</h2>
-                                <p>Printed on a 4"x6" postcard 100% money back guarantee </p>
-                                <h2>FREE Shipping</h2>
-                                <p>In the United States $0.99 everywhere else</p>
+                                <p>Printed on a 4"x6" postcard
+                                <br>
+                                100% money back guarantee </p>
+                                <h2><strong>FREE</strong> Shipping</h2>
+                                <p>In the United States
+                                <br>
+                                $0.99 everywhere else</p>
                                 <h2>Secure Payments</h2>
-                                <p>Thanks for this goes to our friends at<!--< class="stripe"></>--></p>
+                                <p>Thanks for this goes to our friends at<div class="stripe"></div></p>
                                 <p></p>
                                 <div class="card"></div>
-                                <div class="btn btn-primary">Sign up with</div>
+                                <br><br><br>
+                                <div class="button instagram text-center">Sign up with
+                                <div class= "instagram-logo"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4 cards-container">
