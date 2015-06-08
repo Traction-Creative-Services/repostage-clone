@@ -9,11 +9,15 @@ a{
     color: #FFF;
     text-decoration: none;
 }
+a:hover{
+    color: #FFF;
+    text-decoration: none;
+}
 div{
     font-size: 100%;
 }
 .header{
-    padding-top: 45px;
+    /*padding-top: 45px;*/
     position: relative;
     height: 0;
 }
@@ -50,6 +54,15 @@ div{
     background-position: center center;
     background-repeat: no-repeat;
 }
+@media (max-width: 768px) {.hero{
+    height: 509px;
+}}
+@media (max-width: 768px) {.hero h1 {
+  text-align: center;
+}}
+@media (max-width: 768px) {.hero h3 {
+  text-align: center;
+}}
 .hero h1{
   font-size: 50px;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
@@ -63,12 +76,18 @@ div{
   border-radius:6px;
   display: inline-block;
 }
-.button.instagram{
+@media (max-width: 768px) {.button{
+    width: 100%;
+}}
+.hero .button.instagram:hover{
+    background-image: linear-gradient(-180deg, #326083 0%, #326083 100%);
+}
+.hero .button.instagram{
   background-image: linear-gradient(-180deg, #537FA3 0%, #326083 100%);
 }
 .button.instagram .instagram-logo{
-  height: 30px;
-  width: 125px;
+  height: 35px;
+  width: 120px;
   background: url("instagram-logo.svg") center center no-repeat transparent;
   background-size: cover;
   vertical-align: middle;
@@ -81,13 +100,40 @@ div{
     margin-top: 55px;
     margin-bottom: 125px;
 }
+@media (max-width: 768px) {.setup{
+    height: 575px;
+}}
+.setup h1{
+    font-size: 50px;
+}
+@media (max-width: 768px) {.setup h1 {
+  text-align: center;
+}}
 .setup h2{
   font-size: 35px;
 }
+@media (max-width: 768px) {.setup h2 {
+  text-align: center;
+}}
 .setup h5{
   font-size: 17px;
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {.setup h5 {
+  text-align: center;
+}}
+.setup h4{
+    font-size: 20px;
+}
+@media (max-width: 768px) {.setup h4 {
+  text-align: center;
+}}
+.setup p{
+    font-size: 17px;
+}
+@media (max-width: 768px) {.setup p {
+  text-align: center;
+}}
 .setup .step{
     display: flex;
     padding: 0 2.5rem;
@@ -97,32 +143,68 @@ div{
     display:table;
     font-size:3.125rem;
 }
+@media (max-width: 768px) {.setup .step .step-number {
+  text-align: center;
+  display: block;
+}}
 .setup .step .step-content{
     display:table-cell;
 }
+@media (max-width: 768px) {.setup .step .step-content {
+  text-align: center;
+  display: inline-block;
+}}
 .setup .step .step-content h4{
     font-weight: 700;
     margin-bottom:0.125rem;
 }
 .pay {
     color: #FFF;
-    padding: 5rem 0;
+    padding: 75px;
     background-image: radial-gradient(at left top , #3A8FDC 0%, #87D7CD 100%);
     height: 800px
 }
+@media (max-width: 768px) {.pay {
+  height: 1000px;
+}}
 .pay h1{
   font-size: 40px;
   padding-bottom: 15px;
 }
+@media (max-width: 768px) {.pay h1 {
+  text-align: center;
+}}
 .pay h5{
   font-size: 17px;
+}
+@media (max-width: 768px) {.pay h5 {
+  text-align: center;
+}}
+@media (max-width: 768px) {.pay h2 {
+  text-align: center;
+}}
+@media (max-width: 768px) {.pay p {
+  text-align: center;
+}}
+.pay .card{
+    width: 300px;
+}
+.pay .button.instagram{
+    background-image: linear-gradient(-180deg, #F48E33 0%, #E66F2C 100%);
+}
+.pay .button.instagram:hover{
+    background-image: linear-gradient(-180deg, #E66F2C 0%, #E66F2C 100%);
 }
 .pay .cards-mobile-container{
     display: none;
 }
-@media(max-width:786px) .pay .cards-mobile-container{
+@media(max-width:786px) {.pay .cards-mobile-container{
     display: inline-block;
-}
+    transform: rotate(188deg);
+}}
+@media (max-width: 768px) {.pay .pay-card {
+    display: none;
+}}
 .stripe{
     height: 25px;
     width: 60px;
@@ -133,6 +215,10 @@ div{
     height: 40px;
     background: url("card-icons.png") no-repeat scroll center center / contain transparent;
 }
+.pay .pay-card{
+    padding-top: 75px;
+    transform: rotate(8deg);
+}
 .table{
     padding: 5rem 0;
     color: #505050;
@@ -140,10 +226,27 @@ div{
 .table .row{
     padding: 10px;
 }
+.table h5{
+    font-size: large;
+}
 .end {
     color: #FFF;
     padding: 9.375rem 0px;
     background: url("http://repostage.com/static/train-tracks.jpg") no-repeat scroll center center / cover transparent;
+    height: 479px;
+}
+@media (max-width: 768px) {.end h1 {
+  font-size: 50px;
+}}
+@media (max-width: 768px) {.end h5 {
+    font-size: 20px;
+    padding-bottom: 50px;
+}}
+.end .button.instagram{
+  background-image: linear-gradient(-180deg, #537FA3 0%, #326083 100%);
+}
+.end .button.instagram:hover{
+    background-image: linear-gradient(-180deg, #326083 0%, #326083 100%);
 }
 #log-in-btn{
     position:relative;
@@ -155,10 +258,19 @@ div{
     background-image: radial-gradient(at top left, #3A8FDC 0%, #87D7CD 100%);
     background-size: cover;
     padding: 2.8125rem 0;
+    height: 120px;
 }
+@media(max-width:768px){.footer {
+    height: 188px;
+}}
+@media(max-width:768px){.footer .cali .legal .social{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}}
 .footer .instagram{
-    height: 1.3125rem;
-    width: 1.25rem;
+    height: 21px;
+    width: 21px;
     background-image: url("instagram-icon.svg");
     background-size: cover;
     display:inline-block;
@@ -166,8 +278,8 @@ div{
     margin: 0 0.625rem;
 }
 .footer .facebook{
-    height: 1.3125rem;
-    width: 0.625rem;
+    height: 21px;
+    width: 10px;
     background-image: url("facebook-icon.svg");
     background-size: cover;
     display:inline-block;
@@ -175,8 +287,8 @@ div{
     margin: 0 0.625rem;
 }
 .footer .twitter{
-    height: 1.0625rem;
-    width: 1.3125rem;
+    height: 17px;
+    width: 21px;
     background-image: url("twitter-icon.svg");
     background-size: cover;
     display:inline-block;
@@ -184,8 +296,8 @@ div{
     margin: 0 0.625rem;
 }
 .footer .california{
-    height: 1.875rem;
-    width: 3.75rem;
+    height: 30px;
+    width: 60px;
     background-image: url("california-icon.svg");
     background-size: cover;
     display:inline-block;
