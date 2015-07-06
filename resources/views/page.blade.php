@@ -109,7 +109,8 @@
                                 <br>
                                 $0.99 everywhere else</p>
                                 <h2>Secure Payments</h2>
-                                <p>Thanks for this goes to our friends at<div class="stripe"></div></p>
+                                <p>Thanks for this goes to our friends at
+                                <div class="stripe"></div></p>
                                 <p></p>
                                 <div class="card"></div>
                                 <br><br><br>
@@ -134,30 +135,30 @@
             <h5>See, it works! Below are the most recent awesome photos being printed right now.</h5>
             <div class="row photo-row">
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://1.bp.blogspot.com/-xEeb9swx1ks/UP1vlgRW-rI/AAAAAAAAC8Y/wexMZkkwBLs/s1600/Chris-Shen-cage-michael-jackson-590x350.jpg')}}"></img>
+                <img class="img-responsive img-rounded pic" alt="In Action" src="{{url('http://1.bp.blogspot.com/-xEeb9swx1ks/UP1vlgRW-rI/AAAAAAAAC8Y/wexMZkkwBLs/s1600/Chris-Shen-cage-michael-jackson-590x350.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://cdn.morefm.co.nz/morefm/AM/2013/2/21/6075/Nicolas-Cage-Face-20-Mona-Lisa.jpg')}}"></img>
+                <img class="img-responsive img-rounded pic" alt="In Action" src="{{url('http://cdn.morefm.co.nz/morefm/AM/2013/2/21/6075/Nicolas-Cage-Face-20-Mona-Lisa.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://unrealitymag.bcmediagroup.netdna-cdn.com/wp-content/uploads/2010/01/nicholas_cage_12.jpg')}}"></img>
+                <img class="img-responsive img-rounded pic" alt="In Action" src="{{url('http://unrealitymag.bcmediagroup.netdna-cdn.com/wp-content/uploads/2010/01/nicholas_cage_12.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://nicolascage.us/wp-content/uploads/2013/09/Something-About-Mary.jpg')}}"></img>
+                <img class="img-responsive img-rounded pic" alt="In Action" src="{{url('http://nicolascage.us/wp-content/uploads/2013/09/Something-About-Mary.jpg')}}"></img>
               </div>
             </div>
             <div class="row photo-row">
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://d4f1ndlb0hkjb.cloudfront.net/wp-content/uploads/2010/01/nick-cage-abe-lincoln.jpg')}}"></img>
+                <img class="img-responsive img-rounded pic" alt="In Action" src="{{url('http://d4f1ndlb0hkjb.cloudfront.net/wp-content/uploads/2010/01/nick-cage-abe-lincoln.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="{{url('https://aplaceforpeace.files.wordpress.com/2010/02/dylanreevenic-clinton.jpg')}}"></img>
+                <img class="img-responsive img-rounded pic" alt="In Action" src="{{url('https://aplaceforpeace.files.wordpress.com/2010/02/dylanreevenic-clinton.jpg')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://media.tumblr.com/8876a5b97d45be5811442d8ea25d936f/tumblr_inline_mhhtb3G0w41qz4rgp.png')}}"></img>
+                <img class="img-responsive img-rounded pic" alt="In Action" src="{{url('http://media.tumblr.com/8876a5b97d45be5811442d8ea25d936f/tumblr_inline_mhhtb3G0w41qz4rgp.png')}}"></img>
               </div>
               <div class="col-sm-3 col-xs-6">
-                <img class="img-responsive img-rounded" alt="In Action" src="{{url('http://media.tumblr.com/tumblr_m5yl9uOHhF1qmwrao.png')}}"></img>
+                <img class="img-responsive img-rounded pic" alt="In Action" src="{{url('http://media.tumblr.com/tumblr_m5yl9uOHhF1qmwrao.png')}}"></img>
               </div>
             </div>
           </div>
@@ -180,22 +181,22 @@
     <div class="footer">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-5 text-left cali">
-            <span>Made in Orange County</span>
-            <div class="california"></div>
-          </div>
-          <div class="col-sm-2 text-center social">
+          <div class="col-sm-2 col-sm-push-5 text-center social">
             <a href="{{url('http://vodzilla.co/wp-content/uploads/2013/08/con-air-nic-cage-700x325.jpg" class="instagram')}}" class="instagram"></a>
             <a href="{{url('http://25.media.tumblr.com/tumblr_m8wvscKuTy1rcgim4o1_400.jpg" class="facebook')}}" class="facebook"></a>
             <a href="{{url('http://bumbumbum.me/wp-content/uploads/2010/01/Chironex-Fleckerinickywonka-e1263934224121.jpg')}}" class="twitter"></a>
           </div>
-          <div class="col-sm-5 text-right legal">
+          <div class="col-sm-5 col-sm-push-5 text-right legal">
             <ul>
               <li><span><a href="{{url('/joe')}}">FAQ</a></span></li>
               <li><span><a href="{{url('/joe')}}">Legal</a></span></li>
               <li><span><a href="{{url('/joe')}}">Contact Us</a></span></li>
               <li><span>© 2015 Repostage</span></li>
             </ul>
+          </div>
+          <div class="col-sm-5 col-sm-pull-7 text-left cali">
+            <span>Made in Orange County</span>
+            <div class="california"></div>
           </div>
         </div>
       </div>
