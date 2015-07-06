@@ -44,8 +44,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
-                    <h2 class="text-center"> Set up in minutes. No commitments.</h2>
-                    <h5 class="text-center">Signing up for Repostage is fast and free. Pay only when you use it.</h5>
+                    <h2>Set up in minutes. No commitments.</h2>
+                    <h5>Signing up for Repostage is fast and free. Pay only when you use it.</h5>
                     <div class="steps-container">
                         <div class="row">
                             <div class="step col-sm-4">

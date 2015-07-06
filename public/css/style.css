@@ -44,6 +44,10 @@ div{
     line-height: 1.1875rem;
     letter-spacing: 0.03125rem;
 }
+.header .col-sm-12{
+    height: 2.75rem;
+    top: 50px;
+}
 .hero {
     padding: 9.375rem 0px;
     padding-top:200px;
@@ -55,13 +59,17 @@ div{
     background-repeat: no-repeat;
 }
 @media (max-width: 768px) {.hero{
-    height: 509px;
+    height: 675px;
 }}
 @media (max-width: 768px) {.hero h1 {
   text-align: center;
+  margin-top: -40px;
+  margin-left: 20px;
+  max-width: 220px;
 }}
 @media (max-width: 768px) {.hero h3 {
   text-align: center;
+  margin-bottom: 30px;
 }}
 .hero h1{
   font-size: 50px;
@@ -100,8 +108,10 @@ div{
     margin-top: 55px;
     margin-bottom: 125px;
 }
-@media (max-width: 768px) {.setup{
-    height: 575px;
+@media (max-width: 768px) { .setup {
+  padding: 5rem 0;
+  margin: 0;
+  height: 798px;
 }}
 .setup h1{
     font-size: 50px;
@@ -111,6 +121,7 @@ div{
 }}
 .setup h2{
   font-size: 35px;
+  text-align: center;
 }
 @media (max-width: 768px) {.setup h2 {
   text-align: center;
@@ -118,26 +129,36 @@ div{
 .setup h5{
   font-size: 17px;
   margin-bottom: 50px;
+  text-align: center;
 }
 @media (max-width: 768px) {.setup h5 {
   text-align: center;
+  margin-bottom: 0;
 }}
 .setup h4{
     font-size: 20px;
 }
 @media (max-width: 768px) {.setup h4 {
   text-align: center;
+  margin: 0;
 }}
 .setup p{
     font-size: 17px;
 }
 @media (max-width: 768px) {.setup p {
   text-align: center;
+  margin: 0;
+  font-size: 15px;
 }}
 .setup .step{
     display: flex;
     padding: 0 2.5rem;
 }
+@media (max-width: 768px) {.setup .step {
+  padding: 0;
+  margin-top: 1.875rem;
+  display: inline-block;
+}}
 .setup .step .step-number{
     margin:0 0.625rem 0 0;
     display:table;
@@ -145,6 +166,7 @@ div{
 }
 @media (max-width: 768px) {.setup .step .step-number {
   text-align: center;
+  margin: 0px;
   display: block;
 }}
 .setup .step .step-content{
@@ -165,7 +187,8 @@ div{
     height: 800px
 }
 @media (max-width: 768px) {.pay {
-  height: 1000px;
+  height: 1186px;
+  padding: 80px 0;
 }}
 .pay h1{
   font-size: 40px;
@@ -173,6 +196,7 @@ div{
 }
 @media (max-width: 768px) {.pay h1 {
   text-align: center;
+  font-size: 45px;
 }}
 .pay h5{
   font-size: 17px;
@@ -185,6 +209,7 @@ div{
 }}
 @media (max-width: 768px) {.pay p {
   text-align: center;
+  font-size: 17px;
 }}
 .pay .card{
     width: 300px;
@@ -198,6 +223,9 @@ div{
 .pay .cards-mobile-container{
     display: none;
 }
+.pay .cards-mobile-container .pic{
+    margin-top: 50px;
+}
 @media(max-width:786px) {.pay .cards-mobile-container{
     display: inline-block;
     transform: rotate(188deg);
@@ -205,12 +233,21 @@ div{
 @media (max-width: 768px) {.pay .pay-card {
     display: none;
 }}
+@media (max-width: 768px) {.pay .card{
+  margin: 0.625rem auto 0 auto;
+  width: calc(100%);
+}}
 .stripe{
     height: 25px;
     width: 60px;
     background: url("stripe-logo.svg") no-repeat scroll center center / contain transparent;
-    background-size: 60px;
-    }
+    background-size: contain;
+    display: inline-block;
+    vertical-align: top;
+}
+@media (max-width: 768px) {.stripe{
+    margin-left: 110px;
+}}
 .pay .card{
     height: 40px;
     background: url("card-icons.png") no-repeat scroll center center / contain transparent;
@@ -229,6 +266,9 @@ div{
 .table h5{
     font-size: large;
 }
+@media (max-width: 768px) {.table h2{
+    font-size: 37px;
+}}
 .end {
     color: #FFF;
     padding: 9.375rem 0px;
@@ -247,6 +287,15 @@ div{
 }
 .end .button.instagram:hover{
     background-image: linear-gradient(-180deg, #326083 0%, #326083 100%);
+}
+.end h1{
+    margin-top: 50px;
+    font-size: 45px;
+    line-height: 3.125rem;
+}
+.end h5{
+    font-size: 17px;
+    margin-bottom: 50px;
 }
 #log-in-btn{
     position:relative;
