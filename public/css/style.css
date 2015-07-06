@@ -377,7 +377,8 @@ div{
 @media (max-width: 768px) {.footer .legal ul {
     padding-left: 0px;
     font-size: 10px;
+    text-align: center;
 }}
 @media (max-width: 768px) {.footer .cali{
-    margin: 0px 15px;
+    text-align: center;
 }
